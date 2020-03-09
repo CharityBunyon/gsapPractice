@@ -1,16 +1,24 @@
-p {
-  opacity: 0;
-}
-.App {
-  text-align: center;
+.circle {
+  width: 75px;
+  height: 75px;
+  border-radius: 100%;
+  background-color:  #fdcf51;
+  margin: 50px;
 }
 
-.App-logo {
-  height: 40vmin;
-  opacity: 0;
-  pointer-events: none;
- 
+.red {
+background-color: #dc143c;
 }
+
+.blue {
+  background-color: #51a0fd;
+}
+
+.App {
+  text-align: center;
+  visibility: hidden;
+}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -20,7 +28,7 @@ p {
 }
 
 .App-header {
-  background-color: #282c34;
+
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -30,9 +38,7 @@ p {
   color: white;
 }
 
-.App-link {
-  color: chocolate;
-}
+
 
 @keyframes App-logo-spin {
   from {
